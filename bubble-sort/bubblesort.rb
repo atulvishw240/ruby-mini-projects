@@ -1,9 +1,13 @@
 def bubble_sort(unsorted_array)
     counter = 0
-    while counter < unsorted_array.size - 1
+    size_of_array = unsorted_array.size
+
+    while counter < size_of_array - 1
+        # Create two pointers
         left = 0
         right = 1
-        while right < unsorted_array.size
+        # In each pass last element will get set, so we have to make 1 less switch
+        while right < size_of_array - counter
             if unsorted_array[left] > unsorted_array[right]
                 # Swap
                 temp = unsorted_array[left]
@@ -20,5 +24,5 @@ def bubble_sort(unsorted_array)
     unsorted_array.to_a
 end
 
-array = [756, 12, 92, 62, 66, 22, 16, 19, 28, 54]
+array = [12, 64, 91, 38, 82, 62, 66, 12, 9, 53]
 puts bubble_sort(array)
