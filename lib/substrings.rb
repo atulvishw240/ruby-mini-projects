@@ -1,19 +1,3 @@
-# def substrings(word, dictionary)
-#     my_hash = Hash.new
-#     dictionary.each do |element|
-#         counter = 0
-#         if word.downcase.include?(element.downcase)
-#             if my_hash.include?(element)
-#                 my_hash[element] = my_hash[element] + 1
-#             else
-#                 counter = counter + 1
-#                 my_hash[element] = counter
-#             end
-#         end
-#     end
-#     my_hash
-# end
-
 def substrings(string, dictionary)
     word_array = string.downcase.split(' ')
     output = Hash.new
