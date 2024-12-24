@@ -23,6 +23,3 @@ def bubble_sort(unsorted_array)
     end
     unsorted_array.to_a
 end
-
-array = [12, 64, 91, 38, 82, 62, 66, 12, 9, 53]
-puts bubble_sort(array)

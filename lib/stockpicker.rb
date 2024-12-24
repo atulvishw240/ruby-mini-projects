@@ -41,8 +41,5 @@ def stockpicker(array)
     return [buy_day, sell_day]
 end
 
-array = [17, 3, 6, 9, 2, 15, 8, 6, 20, 1, 10]
-p stockpicker(array)
-
 
         
