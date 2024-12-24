@@ -1,3 +1,4 @@
+# Return best day to buy and the best day to sell => [buy, sell]
 def stockpicker(array)
     buy_price = 0
     sell_price = 0
